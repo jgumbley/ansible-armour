@@ -5,3 +5,5 @@ venv/
 *~
 .idea/
 *.pyc
+tmp_xunit_out
+xunit_out.xml
