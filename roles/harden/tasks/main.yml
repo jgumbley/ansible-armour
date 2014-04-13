@@ -1,0 +1,11 @@
+---
+- ufw: state=enabled
+
+- name: allow all to port 22
+  ufw: rule=allow port=22
+  sudo: yes
+
+- name: deny all to port 111
+  ufw: rule=deny port=111
+  sudo: yes
+

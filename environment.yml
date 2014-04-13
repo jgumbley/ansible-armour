@@ -6,4 +6,6 @@
 
 - hosts: fortress
   sudo: yes
+  roles:
+    - harden
 
