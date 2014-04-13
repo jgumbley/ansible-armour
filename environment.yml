@@ -2,6 +2,7 @@
 - hosts: blackhat
   sudo: yes
   roles:
+    - blackhat
 
 - hosts: fortress
   sudo: yes

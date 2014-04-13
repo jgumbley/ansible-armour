@@ -1,0 +1,7 @@
+---
+- name: install some tools
+  apt: name={{ item }} state=latest
+  sudo: yes
+  with_items:
+    - nmap
+
