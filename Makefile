@@ -37,12 +37,11 @@ provision: venv
 	source ./venv/bin/activate; vagrant provision
 	$(call green,"[Making venv successful]")
 
-shell: venv box
-	. $(in_venv); $(ansible-playbook) developer-shell.yml \
-		--extra-vars "git_user=$(shell git config --get user.name) \
-	   	git_email=$(shell git config --get user.email) \
-	   	git_editor=$(shell git config --get core.editor)"
-	$(call green,"[Local git configuration pushed to vagrant shell]")
+.PHONY: tests
+tests: venv box
+	. $(in_venv); $(ansible-playbook) tests_environment.yml
+	cat xunit_out.xml
+	$(call green,"[Tests run]")
 
 clean:
 	vagrant halt
