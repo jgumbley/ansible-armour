@@ -12,7 +12,7 @@ ansible-playbook=ansible-playbook -i \
    	--private-key=~/.vagrant.d/insecure_private_key -u vagrant
 
 .PHONY: default¬
-default: box
+default: box provision tests
 	$(call green,"[All steps successful]")
 
 .PHONY: ssh
