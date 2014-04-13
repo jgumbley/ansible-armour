@@ -7,10 +7,19 @@ Vague Ideas
 Layout
 ======
 
-Ansible as a co-ordination layer
+Make as entry point to everythiutomation layer
 
 Box Blackhat
     Contains tools to send bad stuff
 
 Fortress
     Contains configuration to defend
+
+Testing
+=======
+
+Two types of roles.
+
+ * test-something
+
+ * something

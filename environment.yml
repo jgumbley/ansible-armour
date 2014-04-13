@@ -1,6 +1,8 @@
 ---
 - hosts: blackhat
   sudo: yes
+  roles:
+    - test_something
 
 - hosts: fortress
   sudo: yes

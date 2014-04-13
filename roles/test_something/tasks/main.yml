@@ -1,0 +1,5 @@
+---
+- name: lets test for the existence of the bananas folder
+  stat: path=/bananas
+  register: banana_path
+  failed_when: banana_path.stat.exists == false
