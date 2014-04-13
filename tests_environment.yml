@@ -2,7 +2,7 @@
 - hosts: blackhat
   sudo: yes
   roles:
-    - test_something
+    - penetrate
 
 - hosts: fortress
   sudo: yes

@@ -7,14 +7,16 @@ Vague Ideas
 Layout
 ======
 
-Make as entry point to everythiutomation layer
+Make as entry point to everything
+Ansible as automation layer
 
  * Box Blackhat
    - Contains tools to send bad stuff
-   - nmap?
+   - nmap port scan
 
  * Fortress
    - Contains configuration to defend
+   - ufw rule
 
 Testing
 =======
@@ -22,5 +24,8 @@ Testing
 Two types of roles.
 
  * test-something
+   - penetrate
 
  * something
+   - harden (defensive)
+   - blackhat (remote tools)
