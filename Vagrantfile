@@ -17,12 +17,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         ansible.playbook = "environment.yml"
     end
  
-    config.vm.define "blackhat" do |frontend|
-        config.vm.network "private_network", ip: "10.0.0.10"
+    config.vm.define "blackhat" do | blackhat |
+        blackhat.vm.network "private_network", ip: "10.0.0.10", 
+            virtualbox__intnet: true
     end
   
-    config.vm.define "fortress" do |management|
-        config.vm.network "private_network", ip: "10.0.0.11"
+    config.vm.define "fortress" do | fortress |
+        fortress.vm.network "private_network", ip: "10.0.0.11", 
+            virtualbox__intnet: true
     end
 
 end

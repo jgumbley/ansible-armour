@@ -43,8 +43,12 @@ tests: venv box
 	cat xunit_out.xml
 	$(call green,"[Tests run]")
 
+.PHONY: mrsparkle
+mrsparkle: clean
+	rm -Rf venv
+	$(call green,"[Cleaned up everything]")
+
 clean:
 	vagrant halt
 	vagrant destroy -f
-	rm -Rf venv
 	$(call green,"[Cleaned up]")
