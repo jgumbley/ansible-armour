@@ -9,11 +9,12 @@ Layout
 
 Make as entry point to everythiutomation layer
 
-Box Blackhat
-    Contains tools to send bad stuff
+ * Box Blackhat
+   - Contains tools to send bad stuff
+   - nmap?
 
-Fortress
-    Contains configuration to defend
+ * Fortress
+   - Contains configuration to defend
 
 Testing
 =======
