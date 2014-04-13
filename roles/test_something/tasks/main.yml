@@ -2,4 +2,10 @@
 - name: lets test for the existence of the bananas folder
   stat: path=/bananas
   register: banana_path
-  failed_when: banana_path.stat.exists == false
+  failed_when: banana_path.stat.exists == true
+
+- name: lets see if tcp 111 is open
+  command: nmap 10.0.0.11
+  register: command_result
+  failed_when: "'111/tcp' in command_result.stdout"
+
