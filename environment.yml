@@ -1,0 +1,7 @@
+---
+- hosts: blackhat
+  sudo: yes
+
+- hosts: fortress
+  sudo: yes
+

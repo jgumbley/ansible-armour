@@ -1,0 +1,7 @@
+.vagrant/
+vagrant_ansible_inventory_development
+dev/
+venv/
+*~
+.idea/
+*.pyc
