@@ -49,6 +49,7 @@ mrsparkle: clean
 	$(call green,"[Cleaned up everything]")
 
 clean:
+	rm -Rf venv/
 	vagrant halt
 	vagrant destroy -f
 	$(call green,"[Cleaned up]")
